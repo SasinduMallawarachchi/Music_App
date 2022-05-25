@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     Button clk1,clk2,clk3;
     MediaPlayer mdx;
 
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,13 +22,17 @@ public class MainActivity extends AppCompatActivity {
 
         mdx = MediaPlayer.create(MainActivity.this,R.raw.sample);
     }
+    
     public void clkPlay(View v){
         mdx.start();
     }
+    
     public void clkPush(View v){
         mdx.pause();
     }
+    
     public void clkStop(View v){
         mdx.stop();
     }
+    
 }
